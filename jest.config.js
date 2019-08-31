@@ -28,6 +28,6 @@ module.exports = {
     'jest-watch-typeahead/testname'
   ],
   'collectCoverage': true,
-  'collectCoverageFrom': ['**/*.{js,vue}', '!**/node_modules/**'],
+  'collectCoverageFrom': ['src/components/*.{js,vue}', '!**/node_modules/**'],
   'coverageReporters': ['html', 'text-summary']
 }
