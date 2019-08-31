@@ -1,5 +1,6 @@
 {
-  "name": "test-dev",
+  "name": "experiments",
+  "description": "A Vue.js project for creating components with test driven devolpement (TDD)",
   "version": "0.1.0",
   "private": true,
   "scripts": {
