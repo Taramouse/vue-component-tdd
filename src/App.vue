@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-    <jumbotron title="Vue TDD Experiments"
-               content="This is a Jumbotron component." />
-    <async-data />
+    <header class="header">
+      <jumbotron title="Vue TDD Experiments"
+                 subtitle="This is a Jumbotron component." />
+
+    </header>
+    <main class="main">
+      <async-data />
+    </main>
+
   </div>
 </template>
 
@@ -24,8 +30,22 @@ export default {
   font-family: Arial, "Avenir", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 10px;
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+.header {
+  width: 600px;
+  height: 200px;
+}
+.main {
+  width: 600px;
 }
 </style>

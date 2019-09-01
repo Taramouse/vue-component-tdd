@@ -11,7 +11,7 @@ const factory = (values = {}) => {
   })
 }
 
-describe('Jumbotron', () => {
+describe('AsyncData', () => {
   it('renders a title', () => {
     const wrapper = factory()
 
