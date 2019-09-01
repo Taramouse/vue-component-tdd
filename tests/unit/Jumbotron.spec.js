@@ -5,7 +5,7 @@ const factory = (values = {}) => {
   return shallowMount(Jumbotron, {
     propsData: {
       title: 'This is the title',
-      content: 'This is the content.'
+      subtitle: 'This is the content.'
     }
   })
 }
