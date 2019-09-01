@@ -5,7 +5,7 @@
     </section>
     <section v-else>
       <div v-if="loading">Loading...</div>
-      <h2>Bitcoin Price Index</h2>
+      <h2>{{ title }}</h2>
       <div v-for="(currency, index) in info"
            :key="index"
            class="currency">
@@ -27,7 +27,7 @@ export default {
   name: 'AsyncData',
   data () {
     return {
-      title: 'Bitcoin',
+      title: 'Bitcoin Price Index',
       url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
       info: null,
       errorMessage: null,
@@ -48,7 +48,7 @@ export default {
           this.loading = false
           this.errored = true
           this.errorMessage = error
-          console.log(errorMessage)
+          console.log(this.errorMessage)
         })
         .finally(() => { this.loading = false })
     }

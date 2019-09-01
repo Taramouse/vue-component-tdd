@@ -20,6 +20,6 @@ describe('Jumbotron', () => {
   it('renders the content', () => {
     const wrapper = factory()
 
-    expect(wrapper.find('.content').text()).toEqual('This is the content.')
+    expect(wrapper.find('.subtitle').text()).toEqual('This is the content.')
   })
 })
