@@ -35,7 +35,7 @@ export default {
   align-items: center;
   text-align: center;
   color: #2c3e50;
-  margin: 10px;
+  margin: 0 100px;
 }
 h1,
 h2 {
@@ -43,7 +43,7 @@ h2 {
 }
 .header {
   width: 600px;
-  height: 200px;
+  margin-bottom: 10px;
 }
 .main {
   width: 600px;
